@@ -1,0 +1,74 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Passive Chess (Chinese)</title>
+<link rel="stylesheet" href="css/style-7eb2a9d6.css"/>
+</head>
+<body>
+
+<img id="Board" style="display:none" src="images/xiangqi/custom.png">
+<img id="RedBlankTile" style="display:none" src="images/xiangqi/blank.png">
+<img id="BlackBlankTile" style="display:none" src="images/xiangqi/blank.png">
+<img id="RedHorseTile" style="display:none" src="images/xiangqi/horse.png">
+<img id="BlackHorseTile" style="display:none" src="images/xiangqi/horse.png">
+<img id="RedElephantTile" style="display:none" src="images/xiangqi/elephant.png">
+<img id="BlackElephantTile" style="display:none" src="images/xiangqi/elephant.png">
+<img id="RedChariotTile" style="display:none" src="images/xiangqi/chariot.png">
+<img id="BlackChariotTile" style="display:none" src="images/xiangqi/chariot.png">
+<img id="RedCannonTile" style="display:none" src="images/xiangqi/cannon.png">
+<img id="BlackCannonTile" style="display:none" src="images/xiangqi/cannon.png">
+<img id="RedMandarinTile" style="display:none" src="images/xiangqi/mandarin.png">
+<img id="BlackMandarinTile" style="display:none" src="images/xiangqi/mandarin.png">
+<img id="RedGeneralTile" style="display:none" src="images/xiangqi/general.png">
+<img id="BlackGeneralTile" style="display:none" src="images/xiangqi/general.png">
+<img id="RedHorse" style="display:none" src="images/xiangqi/rhorse.png">
+<img id="BlackHorse" style="display:none" src="images/xiangqi/bhorse.png">
+<img id="RedElephant" style="display:none" src="images/xiangqi/relephant.png">
+<img id="BlackElephant" style="display:none" src="images/xiangqi/belephant.png">
+<img id="RedChariot" style="display:none" src="images/xiangqi/rchariot.png">
+<img id="BlackChariot" style="display:none" src="images/xiangqi/bchariot.png">
+<img id="RedCannon" style="display:none" src="images/xiangqi/rcannon.png">
+<img id="BlackCannon" style="display:none" src="images/xiangqi/bcannon.png">
+<img id="RedMandarin" style="display:none" src="images/xiangqi/rmandarin.png">
+<img id="BlackMandarin" style="display:none" src="images/xiangqi/bmandarin.png">
+<img id="RedGeneral" style="display:none" src="images/xiangqi/rgeneral.png">
+<img id="BlackGeneral" style="display:none" src="images/xiangqi/bgeneral.png">
+
+<div class="center-body">
+    <div class="canvas-wrap" id="canvasFit">
+        <div class="section-menu" style="position:absolute;left:0;right:0;bottom:100%;padding-bottom:2px;">
+        <a href="javascript:Dagaz.Controller.home()" title="Home" style="display:none" id="home"><img src="images/home.png"/></a>
+        <a href="javascript:Dagaz.Controller.undo()" title="PgDown" style="display:none" id="undo"><img src="images/undo.png"/></a>
+        Copyright (c) 2018 Valentin Chelnokov
+        <a href="javascript:Dagaz.Controller.resign()">I Resign</a>
+        <a href="javascript:Dagaz.Controller.drawOffer()">Offer Draw</a>
+        <a href="javascript:Dagaz.Controller.sound()" id="sound">no Sound</a>
+        <a href="javascript:Dagaz.Controller.redo()" title="PgUp" style="display:none" id="redo"><img src="images/redo.png"/></a>
+        <div align="right" id="timer"></div>
+        </div>
+        <div class="cc2">
+        <canvas id="Canvas" width="411" height="413" style="cursor:default" class="canvas-body">Broken canvas...</canvas>
+        </div>
+    </div>
+</div>
+
+<script src="vendor/underscore-min.js"></script>
+<script src="vendor/jquery-3.5.1.min.js"></script>
+<script src="vendor/seedrandom.min.js"></script>
+<script src="common-scripts/autofit.js"></script>
+<script src="common-scripts/dagaz.js"></script>
+<script src="common-scripts/zrf-model.js"></script>
+<script src="common-scripts/zobrist.js"></script>
+<script src="common-scripts/common-setup-v2.js"></script>
+<script src="common-scripts/2d-view-v2.js"></script>
+<script src="common-scripts/move-list-v2.js"></script>
+<script src="common-scripts/sound-manager-v2.js"></script>
+<script src="common-scripts/session-manager.js"></script>
+<script src="scripts/passive-chess-invariant.js"></script>
+<script src="scripts/custom-passive-extension.js"></script>
+<script src="scripts/custom-passive-swap.js"></script>
+<script src="scripts/custom-passive-chess-black.js"></script>
+<script src="common-scripts/app-net-v2.js"></script>
+
+</body>
+</html>
